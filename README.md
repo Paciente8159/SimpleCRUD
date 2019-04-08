@@ -13,7 +13,7 @@ To use this library simply download it and add it to your .NET project file (.cs
 </ItemGroup>
 ```
 
-###Step 1
+#### Step 1
 The hard part. This is a template. No driver or database engine is included so you have to implement a generic repository that will implement your CRUD (Create/Read/Update/Delete) operations. This class must inherit the ICRUDRepository.
 To support
 The following exemple uses a List to simulate as database table.
@@ -102,7 +102,7 @@ namespace Example
 }
 ```
 
-###Step 2
+#### Step 2
 To use it simply add the CRUDModelPK attribute to each model primary key
 
 ```cs
@@ -122,7 +122,7 @@ namespace Example
 }
 ```
 
-###Step 3
+#### Step 3
 Create the corresponding ICRUDInterface to be injected on your MVC services for each model.
 
 ```cs
@@ -137,7 +137,7 @@ namespace Example
 }
 ```
 
-###Step 4
+#### Step 4
 After this you are lunched. For each model create it's custom repository inheriting this base class.
 
 ```cs
@@ -158,7 +158,7 @@ namespace Example
 
 And in the controllers folder add the corresponding custom CRUDController.
 
-###Step 5
+#### Step 5
 ```cs
 using System;
 using Microsoft.AspNetCore.Mvc;
